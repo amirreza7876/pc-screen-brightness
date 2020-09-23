@@ -64,7 +64,6 @@ while True:
             if key == "bright":
                 os.system("xrandr --output {} --brightness 1".format(choosed))
 
-    # cv2.imshow("frame", resized_gray)
     key = cv2.waitKey(100)
     if key == 27:
         break
