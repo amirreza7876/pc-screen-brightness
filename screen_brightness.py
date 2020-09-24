@@ -5,7 +5,7 @@ import time
 from collections import Counter
 from signal import signal, SIGINT
 import cv2
-
+import sys
 
 
 def screens():
@@ -31,7 +31,10 @@ def main():
     sources = screens()
     print("Choose your display:")
     for i, source in enumerate(sources):
-        print("\t", i, "-", source)
+        if sys.version_info[0] > 3:
+            print("\t", i, "-", source)
+        else:
+            print("\t"+ str(i)+ "-"+ source)
     try:
         selected_display = int(input("\nSelect output (default is 0): "))
     except ValueError:
