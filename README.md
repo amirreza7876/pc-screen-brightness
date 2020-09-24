@@ -1,3 +1,6 @@
 # pc-screen-brightness
 This script can change the brightness of your screen compared to ambient light.
-all you need to do is clone this script and run and select your screen is list.
+All You need to do is:
+1. clone this repository
+2. run `pip install -r requirements.txt` in your terminal
+3. run the script
