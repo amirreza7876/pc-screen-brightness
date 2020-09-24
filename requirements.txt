@@ -1,0 +1,3 @@
+scikit-build==0.11.1
+opencv-contrib-python==4.2.0.34
+numpy==1.19.2
